@@ -1,42 +1,38 @@
 .. index::
    single: Requirements
    
-Requirements for running Symfony2
-=================================
+Symfony2的运行条件
+==================
 
-To run Symfony2, your system needs to adhere to a list of requirements. You can
-easily see if your system passes all requirements by running the ``web/config.php``
-in your Symfony distribution. Since the CLI often uses a different ``php.ini``
-configuration file, it's also a good idea to check your requirements from
-the command line via:
+你的系统需要满足一定的条件，才能正确、高效地运行Symfony2。你可以通过访问 ``web/config.php`` 来确认这些条件是否满足。由于命令行的PHP通常使用另外的 ``php.ini`` 文件，所以你还应该在命令行下进行检查：
 
 .. code-block:: bash
 
     php app/check.php
 
-Below is the list of required and optional requirements.
+以下是运行条件的清单：
 
-Required
---------
+必须
+----
 
-* PHP needs to be a minimum version of PHP 5.3.2
-* Sqlite3 needs to be enabled
-* JSON needs to be enabled
-* ctype needs to be enabled
-* Your PHP.ini needs to have the date.timezone setting
+* PHP的版本应是5.3.2以上
+* 安装Sqlite3并启用PHP的支持
+* 启用JSON
+* 启用ctype
+* PHP.ini里需要设置date.timezone（时区，中国可以用Asia/Chongqing）
 
-Optional
---------
+可选
+----
 
-* You need to have the PHP-XML module installed
-* You need to have at least version 2.6.21 of libxml
-* PHP tokenizer needs to be enabled
-* mbstring functions need to be enabled
-* iconv needs to be enabled
-* POSIX needs to be enabled (only on \*nix)
-* Intl needs to be installed with ICU 4+
-* APC 3.0.17+ (or another opcode cache needs to be installed)
-* PHP.ini recommended settings
+* 启用PHP-XML
+* 2.6.21以上版本的libxml
+* 启用PHP tokenizer
+* 启用mbstring（开发中文的应用程序，这个是必须）
+* 启用iconv
+* 启用POSIX（仅限于\*nix类系统）
+* 启用Intl，并安装ICU 4+
+* 安装3.0.17以上版本的APC（或者其他的加速器）
+* PHP.ini里的一些推荐配置
 
   * ``short_open_tag = Off``
   * ``magic_quotes_gpc = Off``
@@ -46,6 +42,5 @@ Optional
 Doctrine
 --------
 
-If you want to use Doctrine, you will need to have PDO installed. Additionally,
-you need to have the PDO driver installed for the database server you want
-to use.
+如果你打算使用Doctrine，你需要安装PDO，以及与你打算使用的数据库相应的PDO
+驱动。
