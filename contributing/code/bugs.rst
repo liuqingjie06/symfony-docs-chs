@@ -1,34 +1,27 @@
-Reporting a Bug
-===============
+报告Bug
+=======
 
-Whenever you find a bug in Symfony2, we kindly ask you to report it. It helps
-us make a better Symfony2.
+如果你发现了Symfony2的Bug，我们希望你能向开发组报告。这样我们才能使Symfony2变得更好。
 
 .. caution::
 
-    If you think you've found a security issue, please use the special
-    :doc:`procedure <security>` instead.
+    如果你定位的是安全方面的问题，请按照 :doc:`安全问题流程 <security>` 操作。
 
-Before submitting a bug:
+在提交Bug之前：
 
-* Double-check the official `documentation`_ to see if you're not misusing the
-  framework;
+* 仔细和 `documentation`_ 进行对照，确保问题不是出自使用上的问题；
 
-* Ask for assistance on the `users mailing-list`_, the `forum`_, or on the
-  #symfony `IRC channel`_ if you're not sure if your issue is really a bug.
+* 如果对定位某个bug并没有足够把握，你可以在 `邮件列表 <users mailing-list>`_ 、 `官方论坛 <forum>`_ , 或者“ #symfony ” `IRC频道 <IRC channel>`_ 上寻求帮助。
 
-If your problem definitely looks like a bug, report it using the official bug
-`tracker`_ and follow some basic rules:
+如果你确认你遇到的是一个Bug，请按照以下基本规则，在官方的 `Bug管理系统 <tracker>`_ 上进行提交：
 
-* Use the title field to clearly describe the issue;
+* 在标题中明确地概括问题；
 
-* Describe the steps needed to reproduce the bug with short code examples
-  (providing a unit test that illustrates the bug is best);
+* 用简短的代码来演示如何重现bug，如果能提供单元测试代码更佳；
 
-* Give as much details as possible about your environment (OS, PHP version,
-  Symfony version, enabled extensions, ...);
+* 尽量提供出现该bug的代码环境的信息，如操作系统，PHP版本，Symfony的版本，启用了哪些PHP扩展等等。
 
-* *(optional)* Attach a :doc:`patch <patches>`.
+* *（非必须的）* 提交 :doc:`补丁 <patches>` 。
 
 .. _documentation: http://symfony.com/doc/2.0/
 .. _users mailing-list: http://groups.google.com/group/symfony-users
