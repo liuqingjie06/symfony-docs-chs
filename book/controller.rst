@@ -2,6 +2,7 @@
    single: Controller
 
 Controller
+控制器
 ==========
 
 A controller is a PHP function you create that takes information from the
@@ -10,6 +11,8 @@ HTTP request and constructs and returns an HTTP response (as a Symfony2
 a serialized JSON array, an image, a redirect, a 404 error or anything else
 you can dream up. The controller contains whatever arbitrary logic *your
 application* needs to render the content of a page.
+
+
 
 To see how simple this is, let's look at a Symfony2 controller in action.
 The following controller would render a page that simply prints ``Hello world!``::
