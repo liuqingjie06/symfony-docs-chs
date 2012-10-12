@@ -12,10 +12,16 @@ a serialized JSON array, an image, a redirect, a 404 error or anything else
 you can dream up. The controller contains whatever arbitrary logic *your
 application* needs to render the content of a page.
 
-
+控制器(controller)是一个用来从HTTP请求中提取信息,生成并返回HTTP响应(一个symfony2
+``response`` 对象)的php程序.响应可以是一个HTML页面,一个XML文件,一系列的JSON数组,一张
+图片,一个重定向,一个404错误页面或者其他你能想象到的东西.控制器包含了应用提交页面所需的任何
+逻辑结果.
 
 To see how simple this is, let's look at a Symfony2 controller in action.
 The following controller would render a page that simply prints ``Hello world!``::
+
+控制器的操作非常简单,让我们看一看它是如何工作的.
+下面的控制器提交了一个显示``Hello world!``的页面.
 
     use Symfony\Component\HttpFoundation\Response;
 
@@ -29,6 +35,10 @@ object. Along the way, it might read information from the request, load a
 database resource, send an email, or set information on the user's session.
 But in all cases, the controller will eventually return the ``Response`` object
 that will be delivered back to the client.
+
+控制器的目的总是相同的:返回一个``Response``对象.通过这样的方法,它可能是从请求(request)中
+读取信息,加载数据库资源,发送一封email,或者设置用户的session信息.但是在所有的情况中,
+控制器最终会返回``Response``对象并发送回给客户端.
 
 There's no magic and no other requirements to worry about! Here are a few
 common examples:
