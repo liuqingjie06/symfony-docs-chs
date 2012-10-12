@@ -18,10 +18,11 @@ application* needs to render the content of a page.
 逻辑结果.
 
 To see how simple this is, let's look at a Symfony2 controller in action.
-The following controller would render a page that simply prints ``Hello world!``::
+The following controller would render a page that simply prints``Hello world!``:
 
 控制器的操作非常简单,让我们看一看它是如何工作的.
-下面的控制器提交了一个显示``Hello world!``的页面.
+下面的控制器提交了一个显示 ``Hello world!`` 的页面::
+
 
     use Symfony\Component\HttpFoundation\Response;
 
